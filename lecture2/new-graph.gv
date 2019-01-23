@@ -1,0 +1,13 @@
+// Precedence Graph
+digraph {
+	graph [rankdir=LR]
+	s -> 1
+	s -> 4
+	1 -> 2
+	2 -> 3
+	2 -> 5
+	3 -> 6
+	4 -> 6
+	5 -> 6
+	6 -> t
+}
