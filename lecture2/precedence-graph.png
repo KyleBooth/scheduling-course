@@ -1,18 +1,16 @@
 // Precedence Graph
 digraph {
 	graph [rankdir=LR]
-	J0R1
-	J0R0 -> J0R1
-	J1R1 -> J0R1
 	J0R0
 	s -> J0R0
-	J1R0 -> J0R0
-	J1R0
-	s -> J1R0
 	t
 	J0R1 -> t
 	J1R1 -> t
-	s
+	J1R0
+	s -> J1R0
 	J1R1
 	J1R0 -> J1R1
+	J0R1
+	J0R0 -> J0R1
+	s
 }
