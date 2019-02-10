@@ -3,10 +3,11 @@
 % Usage: Scheduling Course
 
 % Define problem instance 
-n = 5;
-w = [12, 1, 4, 3, 2];
-v = [4, 2, 10, 1, 2];
-C = 15; 
+% Instance from graphic on Slide 21 (Lecture 9)
+n = 5; % number of items
+w = [12, 1, 4, 3, 2]; % item weights
+v = [4, 2, 10, 1, 2]; % item values
+C = 15; % knapsack capacity
 
 % Parameters
 int: n; 
