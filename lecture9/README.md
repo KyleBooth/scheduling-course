@@ -1,6 +1,8 @@
 ### Modeling in MiniZinc
 
-In this course, we will be looking at implementations of our various models in MiniZinc. MiniZinc is a high-level modeling software that allows users to model problems using _mixed integer linear programming_ (MILP) or _constraint programming_ (CP). In lecture 9, you saw an introduction to MILP modeling with the _0-1 knapsack problem_ and _single machine scheduling_.
+In this course, we will be looking at implementations of our various models in MiniZinc. MiniZinc is a high-level modeling software that allows users to model problems using _mixed integer linear programming_ (MILP) or _constraint programming_ (CP). Once modeled in the software, the program implements a highly efficient branch-and-bound (so that you don't have to!). 
+
+In lecture 9, you saw an introduction to MILP modeling with the _0-1 knapsack problem_ and _single machine scheduling_.
 
 #### Installation
 
