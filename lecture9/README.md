@@ -8,7 +8,7 @@ To install MiniZinc, please visit [https://www.minizinc.org/software.html](https
 
 After downloading the installer, run it - this will install the MiniZinc IDE on your machine.
 
-Once the application is installed, copy and paste the models from this repository in the IDE and click "Run" - the solver should start solving the problem and output the solution in the "Output" area. Congratulations on your first successful use of MiniZinc!
+Once the application is installed, copy and paste the contents of any of the .mzn files from this repository in the IDE and click "Run" - the solver should start solving the problem and output the solution in the "Output" area. Congratulations on your first successful use of MiniZinc!
 
 
 
