@@ -41,9 +41,7 @@ constraint sum(j in J)(C[j]) == Z;
 solve minimize Z;
 
 % Solution output
-output ["Sum of completion times: ", show(Z), "; \n 
-	Job start times: ", show(S), "; \n
-	Ordering vars: ", show(x)]
+output ["Sum of completion times: ", show(Z), "; \n Job start times: ", show(S), "; \n Ordering vars: ", show(x)]
  
 
 
