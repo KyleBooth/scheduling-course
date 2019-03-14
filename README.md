@@ -8,3 +8,4 @@ Repository contents:
 * Lecture 2: Precedence graphs and makespan (via forward-pass CPM)
 * Lecture 5: Complexity (performance of various sorting algorithms)
 * Lecture 9: Modeling scheduling problems with MILP (using MiniZinc)
+* Lecture 13: Modeling scheduling problems with CP (using MiniZinc)
