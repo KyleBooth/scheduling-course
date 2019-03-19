@@ -10,3 +10,4 @@ Repository contents:
 * Lecture 9: Modeling scheduling problems with MILP (using MiniZinc)
 * Lecture 11: Bin Packing for Timetabling (with associated MILP model)
 * Lecture 13: Modeling scheduling problems with CP (using MiniZinc)
+* Lecture 16: Sports scheduling - single round robin models MILP and CP (using MiniZinc)
