@@ -15,12 +15,11 @@ int: B;
 int: C;
 set of int: I = 1..B; % bin indexing
 set of int: J = 1..n; % item indexing
-set of int: IJ = 1..B*n; % bin/item pair indexing
 array[J] of int: W;
 
 % Define variables
 array[I] of var 0..1: y; % y[i] = 1 if bin i is opened, 0 otherwise  
-array[IJ] of var 0..1: x; % x[i][j] = 1 if item j placed in bin i, 0 otherwise
+array[I,J] of var 0..1: x; % x[i][j] = 1 if item j placed in bin i, 0 otherwise
 var int: Z; % number of bins used
 
 % Lower bound on bins
@@ -28,12 +27,12 @@ constraint sum(i in I)(y[i]) >= 1; % You can change 1 to a provable lower bound!
 
 % Capacity constraint
 constraint forall(i in I)(
-	sum(j in J)(W[j]*x[(i-1)*n + j]) <= C*y[i] % Items in each open bin cannot exceed capacity
+	sum(j in J)(W[j]*x[i,j]) <= C*y[i] % Items in each open bin cannot exceed capacity
 	);
 
 % Assignment constraint
 constraint forall(j in J)(
-	sum(i in I)(x[(i-1)*n + j]) == 1
+	sum(i in I)(x[i,j]) == 1
 	);
 
 % Objective bounding 

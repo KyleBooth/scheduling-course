@@ -14,21 +14,20 @@ int: n;
 int: M;
 int: H;
 set of int: J = 1..n;
-set of int: JJ = 1..n*n;
 array[J] of int: p;
 
 % Variables
 array[J] of var int: S; % job start time variables
 array[J] of var int: C; % job completion time variables
-array[JJ] of var 0..1: x; % job ordering variables
+array[J,J] of var 0..1: x; % job ordering variables
 var int: Z; % objective variable
 
 % Constraints
 constraint forall(j in J)(C[j] == S[j] + p[j]);
 
-constraint forall(i in J)(forall(j in J where i != j)(S[i] >= S[j] + p[j] - M * x[(i - 1) * n + j]));
+constraint forall(i in J)(forall(j in J where i != j)(S[i] >= S[j] + p[j] - M * x[i,j]));
 
-constraint forall(i in J)(forall(j in J where i != j)(S[j] >= S[i] + p[i] - M * (1 - x[(i - 1) * n + j])));
+constraint forall(i in J)(forall(j in J where i != j)(S[j] >= S[i] + p[i] - M * (1 - x[i,j])));
 
 constraint forall(j in J)(S[j] >= 0);
 
